@@ -1,23 +1,21 @@
 # ho Addin Template
 
-## History
-
-- 24. May 2018 Created as reusable EA Addin Platform
-
 ## Installation
 
-- Run IfManager.msi
+- Run hoAddinTemplate.msi
   - Advanced
   - Follow default values to install without Admin rights
 
 ### Requirements
 
--  Windows, .net framework 4.6.2
+-  Windows, 
+-  .net framework 4.6.2
 
 
 ## Development
 
 -  Visual Studio 2017 community
+-  WIX 3.11 for creating deployment packages
 
 ### Deployment
 
@@ -25,13 +23,15 @@
    - [assembly: AssemblyVersion("1.0.0.0")]
    - [assembly: AssemblyFileVersion("1.0.0.0")]
 -  Remember to update AssemblyVersion 
-   - IfManSetup/Wxs/Files.wxs 
+   - hoAddinTemplate_Setup/Wxs/Files.wxs 
      - COM Components
-	   - hoAddinTemplateRoot
-	   - hoAddinTemplate
--  Remember to update Productversion 
-   -  IfManSetup/Wxs/Files.wxs
--  Install without admin rights is possible
+	   - hoAddinTemplate.Root  (initial starting the Addin)
+	   - hoAddinTemplate.Gui   (Gui as COM object to fit in the EA Add-In Window/Tab)
+-  Remember to update Assemebly version 
+   -  hoAddinTemplate_Setup/Wxs/Files.wxs
+-  Install with or without admin rights is possible
+   -  per user
+   -  per machine
 
      
 	   

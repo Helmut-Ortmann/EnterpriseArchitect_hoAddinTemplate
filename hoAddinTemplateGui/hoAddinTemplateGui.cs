@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Diagnostics;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using hoAddinTemplateGui.Settings;
 using hoAddinTemplateUtil.General;
@@ -64,14 +66,22 @@ namespace hoAddinTemplateGui
         {
             string[] dllNames = new string[]
             {
-                "hoAddinTemplate.dll",
+                
                 "hoAddinTemplateRoot.dll",
                 "hoAddinTemplateUtil.dll",
+                "hoAddinTemplateUtil.dll"
             };
             string userData = _settings.SettingsPath;
             string description =
-                $"Interface Management\r\n- Get Interface of a Component\r\n\r\nRep:\t\t{_rep.ConnectionString}\r\n";
-            Generals.AboutMessage(description, "About hoAddinTemplate (ho Addin Template)", dllNames, userData);
+                $"hoAddinTemplate\r\n- Show a simple running EA Add-In with GUI\r\n\r\nRep:\t\t{_rep.ConnectionString}\r\n";
+            Generals.AboutMessage(description, "About hoAddinTemplate ", dllNames, userData);
+        }
+
+        private void readmeToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Debug.Assert(Settings.SettingsFacturyPath != null, "Settings.SettingsFacturyPath != null");
+            string pathReadmeMd = Path.Combine(Path.GetDirectoryName(Settings.SettingsFacturyPath), "readme.md");
+            Basic.StartFile(pathReadmeMd);
         }
     }
 }
