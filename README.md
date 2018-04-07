@@ -30,4 +30,9 @@ My environemt:
 
 
    1.  Open in Visual Studio
-   2.  Rename
+   2.  Update References 
+       - interop.EA.dll
+       - Newtonsoft.Json (Package Manager)
+       - WixUIExtension (hoAddinTemplateSetup to c:\Program Files (x86)\WiX Toolset v3.11\bin\WixUIExtension.dll, my installation)
+       - Project properties: hoAddinTemplateRoot, Debug, Start external program=C:\Program Files (x86)\Sparx Systems\EA\EA.exe, my installation)
+   3.  Build and test as release and debug

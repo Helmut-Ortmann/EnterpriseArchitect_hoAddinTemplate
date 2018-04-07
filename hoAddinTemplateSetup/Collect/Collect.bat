@@ -12,15 +12,15 @@ rem Replace the content between <Component> and </Component> in file-wxs with ge
 rem Only for COM objects:
 rem - Main DLL
 rem - Every DLL which is registered to EA to run in AddIn Window or as own Window
-rem - Replace: Source="SourceDir\release\IfManRoot.dll" /> by
-rem            Name="IfManRoot.dll" Source="$(var.IfManRoot.TargetPath)" />
+rem - Replace: Source="SourceDir\release\hoAddinTemplateRoot.dll" /> by
+rem            Name="hoAddinTemplateRoot.dll" Source="$(var.hoAddinTemplateRoot.TargetPath)" />
 rem            Change name accordingly
 
 
 SET WIX=C:\Program Files (x86)\WiX Toolset v3.11\bin\heat
 del *.wxs
 
-"%WIX%" file ..\..\IfManRoot\bin\x86\release\IfManRoot.dll -ag -template fragment -out IfManRoot.wxs
-"%WIX%" file ..\..\IfManGui\bin\x86\release\IfManGui.dll  -ag -template fragment -out IfManGui.wxs
+"%WIX%" file ..\..\hoAddinTemplateRoot\bin\x86\release\hoAddinTemplateRoot.dll -ag -template fragment -out hoAddinTemplateRoot.wxs
+"%WIX%" file ..\..\hoAddinTemplate\bin\x86\release\hoAddinTemplate.dll  -ag -template fragment -out hoAddinTemplate.wxs
 
 dir

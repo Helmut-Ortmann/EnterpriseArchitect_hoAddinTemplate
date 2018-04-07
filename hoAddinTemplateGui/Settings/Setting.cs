@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
-namespace IfManGui.Settings
+namespace hoAddinTemplate.Settings
 {
     public class Setting
     {
@@ -17,7 +17,7 @@ namespace IfManGui.Settings
         {
 
 
-            _settingsPath = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)), "ho\\IfManager\\Settings.Json");
+            _settingsPath = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)), "ho\\hoAddinTemplate\\Settings.Json");
             string assemblyFolder = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             _settingsFacturyPath = Path.Combine(assemblyFolder, "Settings.Json");
             _settingsBackupPath = $"{_settingsPath}.tmp";
@@ -27,7 +27,7 @@ namespace IfManGui.Settings
 
             if (!File.Exists(_settingsFacturyPath))
             {
-                MessageBox.Show($"Expected factury settings: '{_settingsFacturyPath}' ",@"IfManager: No factury settings found");
+                MessageBox.Show($"Expected factury settings: '{_settingsFacturyPath}' ",@"hoAddinTemplate: No factury settings found");
             }
             // Load factury settings
             if (!File.Exists(_settingsPath))
@@ -58,7 +58,7 @@ namespace IfManGui.Settings
         public void JsonBackup()
         {
             var result = MessageBox.Show(
-                $@"IfManager deletes 'Settings.json'. After restart, you have the initial settings.
+                $@"hoAddinTemplate deletes 'Settings.json'. After restart, you have the initial settings.
 
 You find the factury settings in: '{_settingsFacturyPath}':
 You find the current settings in: '{_settingsPath}':

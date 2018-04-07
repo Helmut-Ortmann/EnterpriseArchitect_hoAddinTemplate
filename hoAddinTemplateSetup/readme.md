@@ -1,4 +1,4 @@
-# Interface Manager
+# ho Addin Template
 
 ## History
 
@@ -27,8 +27,8 @@
 -  Remember to update AssemblyVersion 
    - IfManSetup/Wxs/Files.wxs 
      - COM Components
-	   - IfManRoot
-	   - IfManGui
+	   - hoAddinTemplateRoot
+	   - hoAddinTemplate
 -  Remember to update Productversion 
    -  IfManSetup/Wxs/Files.wxs
 -  Install without admin rights is possible

@@ -7,8 +7,8 @@
     <ProjectGuid>{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IfManGui</RootNamespace>
-    <AssemblyName>IfManGui</AssemblyName>
+    <RootNamespace>hoAddinTemplate</RootNamespace>
+    <AssemblyName>hoAddinTemplate</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -51,11 +51,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.EA">
-      <HintPath>..\IfManSetup\Lib\Interop.EA.dll</HintPath>
+      <HintPath>..\hoAddinTemplateSetup\Lib\Interop.EA.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -69,30 +69,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IfManGui.cs">
+    <Compile Include="hoAddinTemplateGui.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="IfManGui.Designer.cs">
-      <DependentUpon>IfManGui.cs</DependentUpon>
+    <Compile Include="hoAddinTemplateGui.Designer.cs">
+      <DependentUpon>hoAddinTemplateGui.cs</DependentUpon>
     </Compile>
-    <Compile Include="IIfManGui.cs" />
+    <Compile Include="IhoAddinTemplateGui.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\Setting.cs" />
     <Compile Include="Settings\SettingItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="IfManGui.resx">
-      <DependentUpon>IfManGui.cs</DependentUpon>
+    <EmbeddedResource Include="hoAddinTemplateGui.resx">
+      <DependentUpon>hoAddinTemplateGui.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\hoAddinTemplateUtil\hoAddinTemplateUtil.csproj">
       <Project>{d9c039ed-1b7a-4822-8019-6cfd3f154348}</Project>
       <Name>hoAddinTemplateUtil</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

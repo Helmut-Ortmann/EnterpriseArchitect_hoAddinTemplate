@@ -33,14 +33,14 @@ Product definition to install with or without Admin rights
   // Change AssemblyFileVersion accordingly
   -->
   <!-- The post processing of the WIX Setup projects changes the *.msi file name to:
-       'IfManager 1.0.0.msi' (1.0.0=ProductVersion)
+       'hoAddinTemplate 1.0.0.msi' (1.0.0=ProductVersion)
        The Scripts you find in: Setup\Script\..
        see also: http://kentie.net/article/wixnameversion/index.htm
   -->
   <?define ProductVersion="1.0.1" ?> 
   <?define UpgradeCode="A4A2F87F-BFFB-4A32-80A1-E59686460BA3" ?>
   <?define Manufacturer="ho" ?>
-  <?define ProductName="IfManager" ?>
+  <?define ProductName="hoAddinTemplate" ?>
 
   <Product Id="*"
            Name="$(var.ProductName)"
@@ -49,8 +49,8 @@ Product definition to install with or without Admin rights
             Manufacturer="$(var.Manufacturer)"
            UpgradeCode="$(var.UpgradeCode)" >
     <Package
-             Description="Windows installer for IfManager $(var.ProductVersion)"
-             Comments="Execute to install IfManager $(var.ProductVersion)"
+             Description="Windows installer for hoAddinTemplate $(var.ProductVersion)"
+             Comments="Execute to install hoAddinTemplate $(var.ProductVersion)"
              InstallerVersion="200"
              SummaryCodepage="1252"
              Compressed="yes"  
@@ -82,8 +82,8 @@ Product definition to install with or without Admin rights
     </Upgrade>
    
     <Feature Id="Complete"
-              Description="Enterprise Architect Interface Manager"
-              Title="IfManager"
+              Description="Enterprise Architect ho Addin Template"
+              Title="hoAddinTemplate"
               Level="1"
               Display="expand"
               ConfigurableDirectory="APPLICATIONFOLDER" >
@@ -114,7 +114,7 @@ Product definition to install with or without Admin rights
     
     <!-- Prevent downgrading -->
     <MajorUpgrade Schedule="afterInstallInitialize"
-                DowngradeErrorMessage="A later version of IfManager is already installed"
+                DowngradeErrorMessage="A later version of hoAddinTemplate is already installed"
                 AllowSameVersionUpgrades="yes" />
       
       <!-- Install with or without admin rights

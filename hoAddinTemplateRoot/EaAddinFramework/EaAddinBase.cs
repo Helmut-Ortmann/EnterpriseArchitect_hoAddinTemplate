@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace IfManRoot.EaAddinFramework
+namespace hoAddinTemplateRoot.EaAddinFramework
 {
     /// <summary>
     /// This abstract class can be used as a base class for creating add-ins for Enterprise Architect

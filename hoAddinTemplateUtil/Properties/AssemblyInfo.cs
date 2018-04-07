@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IfManUtil")]
-[assembly: AssemblyDescription("Interface Manager Utilities")]
+[assembly: AssemblyTitle("hoAddinTemplateUtil")]
+[assembly: AssemblyDescription("ho Addin Template Utilities")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ho")]
-[assembly: AssemblyProduct("IfManUtil")]
+[assembly: AssemblyProduct("hoAddinTemplateUtil")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

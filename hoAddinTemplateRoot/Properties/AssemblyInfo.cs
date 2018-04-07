@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IfManRoot")]
-[assembly: AssemblyDescription("Interface Manager Root")]
+[assembly: AssemblyTitle("hoAddinTemplateRoot")]
+[assembly: AssemblyDescription("ho Addin Template Root")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ho")]
-[assembly: AssemblyProduct("IfManRoot")]
+[assembly: AssemblyProduct("hoAddinTemplateRoot")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

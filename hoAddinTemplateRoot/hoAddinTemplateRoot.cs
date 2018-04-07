@@ -4,9 +4,9 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using IfManGui.Settings;
+using hoAddinTemplate.Settings;
 
-namespace IfManRoot
+namespace hoAddinTemplateRoot
 {
     // Make sure Project Properties for Release has the Entry: 'Register for COM interop'
     // You may check registration with: https://community.sparxsystems.com/community-resources/772-ea-installation-inspector
@@ -16,11 +16,11 @@ namespace IfManRoot
     // ProgID is the same as the string to register for EA in 'Sparx Systems:EAAddins:AddInSimple:Default'
     // In description: 'Namespace.ClassName'
     // EA uses always the ProId.
-    [ProgId("IfManRoot.IfManRoot")]
-    public class IfManRoot :EaAddinFramework.EaAddinBase
+    [ProgId("hoAddinTemplateRoot.hoAddinTemplateRoot")]
+    public class hoAddinTemplateRoot :EaAddinFramework.EaAddinBase
     {
         private EA.Repository _rep;
-        private IfManGui.IfManGui _gui;
+        private hoAddinTemplate.hoAddinTemplate _gui;
 
 
         // settings
@@ -29,16 +29,16 @@ namespace IfManRoot
 
         //---------------------------------------------------
         // Menu
-        const string MenuName = "-&IfManager";
+        const string MenuName = "-&hoAddinTemplate";
         const string MenuAbout = "About";
 
 
 
-        public IfManRoot()
+        public hoAddinTemplateRoot()
         {
             try
             {
-                // New settings (Merge IfManGui.dll.config with user.cofig, read from user.config
+                // New settings (Merge hoAddinTemplate.dll.config with user.cofig, read from user.config
                 _settings = new Setting();
 
                 // Initialize Menu system
@@ -49,8 +49,8 @@ namespace IfManRoot
             }
             catch (Exception e)
             {
-                MessageBox.Show($@"Error setup 'IfManRoot' Addin. Error:{Environment.NewLine}{e}",
-                    @"IfManager Installation error");
+                MessageBox.Show($@"Error setup 'hoAddinTemplateRoot' Addin. Error:{Environment.NewLine}{e}",
+                    @"hoAddinTemplate Installation error");
             }
         }
         // ReSharper disable once RedundantOverriddenMember
@@ -108,7 +108,7 @@ namespace IfManRoot
             }
             catch (Exception e)
             {
-                MessageBox.Show($@"{e.Message}", @"IfManager: Error initializing repository");
+                MessageBox.Show($@"{e.Message}", @"hoAddinTemplate: Error initializing repository");
             }
 
 
@@ -120,19 +120,19 @@ namespace IfManRoot
             {
                 try
                 {
-                    _gui = _rep.AddWindow(IfManGui.IfManGui.TabName, IfManGui.IfManGui.ProgId);
+                    _gui = _rep.AddWindow(hoAddinTemplate.hoAddinTemplate.TabName, hoAddinTemplate.hoAddinTemplate.ProgId);
                     if (_gui == null)
                     {
-                        MessageBox.Show($"TabName:'{IfManGui.IfManGui.TabName}'\r\nProgId:'{IfManGui.IfManGui.ProgId}'",
-                            "Can't install Add-In 'IfManager' as Tab");
+                        MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'",
+                            "Can't install Add-In 'hoAddinTemplate' as Tab");
                         
                     }
                     _gui.Settings = _settings;
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show($"TabName:'{IfManGui.IfManGui.TabName}'\r\nProgId:'{IfManGui.IfManGui.ProgId}'\r\n\r\n{e}", 
-                        "Can't install Add-In 'IfManager'");
+                    MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'\r\n\r\n{e}", 
+                        "Can't install Add-In 'hoAddinTemplate'");
                     throw;
                 }
             }
@@ -142,16 +142,16 @@ namespace IfManRoot
         {
             try
             {
-               _gui =  _rep.AddTab(IfManGui.IfManGui.TabName, IfManGui.IfManGui.ProgId);
+               _gui =  _rep.AddTab(hoAddinTemplate.hoAddinTemplate.TabName, hoAddinTemplate.hoAddinTemplate.ProgId);
                 if (_gui == null)
                 {
-                    MessageBox.Show($"TabName:'{IfManGui.IfManGui.TabName}'\r\nProgId:'{IfManGui.IfManGui.ProgId}'", "Can't install Add-In 'IfManager' as Window");
+                    MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'", "Can't install Add-In 'hoAddinTemplate' as Window");
                 }
                 ;
             }
             catch (Exception e)
             {
-                MessageBox.Show($"TabName:'{IfManGui.IfManGui.TabName}'\r\nProgId:'{IfManGui.IfManGui.ProgId}'\r\n\r\n{e}", "Can't show Add-In 'IfManager' in EA.");
+                MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'\r\n\r\n{e}", "Can't show Add-In 'hoAddinTemplate' in EA.");
                 throw;
             }
         }
@@ -238,19 +238,19 @@ namespace IfManRoot
                     pathRoot = Path.GetDirectoryName(pathRoot);
 
                     string productVersion = $"{fileVersionInfo.ProductVersion}{Environment.NewLine}";
-                    string pathIfManRoot = Path.Combine(new[] { pathRoot, "IfManRoot.dll" });
-                    string pathIfManGui = Path.Combine(new[] { pathRoot, "IfManGui.dll" });
-                    string pathIfManUtils = Path.Combine(new[] { pathRoot, "IfUtils.dll" });
+                    string pathhoAddinTemplateRoot = Path.Combine(new[] { pathRoot, "hoAddinTemplateRoot.dll" });
+                    string pathhoAddinTemplate = Path.Combine(new[] { pathRoot, "hoAddinTemplate.dll" });
+                    string pathhoAddinTemplateUtils = Path.Combine(new[] { pathRoot, "IfUtils.dll" });
 
                     MessageBox.Show($@"Product version: {productVersion}
-IfManRoot.dll  {FileVersionInfo.GetVersionInfo(pathIfManRoot).FileVersion}
-IfManGui.dll   {FileVersionInfo.GetVersionInfo(pathIfManGui).FileVersion}
-IfManUtils.dll   {FileVersionInfo.GetVersionInfo(pathIfManUtils).FileVersion}
+hoAddinTemplateRoot.dll  {FileVersionInfo.GetVersionInfo(pathhoAddinTemplateRoot).FileVersion}
+hoAddinTemplate.dll   {FileVersionInfo.GetVersionInfo(pathhoAddinTemplate).FileVersion}
+hoAddinTemplateUtils.dll   {FileVersionInfo.GetVersionInfo(pathhoAddinTemplateUtils).FileVersion}
 
-IfManager
+hoAddinTemplate
 Helmut.Ortmann@t-online.de
 +49 172 51 79 16 7
-", "IfManager, Interface Manager");
+", "hoAddinTemplate, Interface Manager");
                     break;
 
 

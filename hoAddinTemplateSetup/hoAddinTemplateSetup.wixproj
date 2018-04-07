@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>617a0a6e-8082-4f0a-a8f7-3261c3c92ee6</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>IfManager</OutputName>
+    <OutputName>hoAddinTemplate</OutputName>
     <OutputType>Package</OutputType>
     <Name>hoAddinTemplateSetup</Name>
   </PropertyGroup>
@@ -36,8 +36,6 @@
     <Content Include="Scripts\RenameMsi.bat" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collect\IfManGui.wxs" />
-    <Compile Include="Collect\IfManRoot.wxs" />
     <Compile Include="Wxs\Directories.wxs" />
     <Compile Include="Wxs\Files.wxs" />
     <Compile Include="Wxs\Product.wxs" />
@@ -84,7 +82,7 @@
     <Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)\IfManSetup\Scripts\renamemsi.bat" "$(SolutionDir)\IfManSetup\bin\release\en-us\IfManager.msi"</PostBuildEvent>
+    <PostBuildEvent>"$(SolutionDir)\IfManSetup\Scripts\renamemsi.bat" "$(SolutionDir)\hoAddinTemplateSetup\bin\release\en-us\hoAddinTemplate.msi"</PostBuildEvent>
   </PropertyGroup>
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.

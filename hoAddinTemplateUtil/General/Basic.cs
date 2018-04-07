@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace IfManUtil.General
+namespace hoAddinTemplateUtil.General
 {
     public class Basic
     {

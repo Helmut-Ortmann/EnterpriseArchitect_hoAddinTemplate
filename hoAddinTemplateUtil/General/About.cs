@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace IfManUtil.General
+namespace hoAddinTemplateUtil.General
 {
     public  class Generals {
         /// <summary>

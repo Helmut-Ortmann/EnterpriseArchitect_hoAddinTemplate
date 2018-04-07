@@ -1,6 +1,6 @@
-﻿namespace IfManGui
+﻿namespace hoAddinTemplate
 {
-    partial class IfManGui
+    partial class hoAddinTemplate
     {
         /// <summary> 
         /// Required designer variable.
@@ -97,12 +97,12 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // IfManGui
+            // hoAddinTemplate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.menuStrip1);
-            this.Name = "IfManGui";
+            this.Name = "hoAddinTemplate";
             this.Size = new System.Drawing.Size(893, 642);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

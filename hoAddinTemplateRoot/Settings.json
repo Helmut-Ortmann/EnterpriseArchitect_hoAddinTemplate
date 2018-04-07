@@ -1,14 +1,14 @@
 ﻿//
 // 
-// Settings Interface Manager (IfManager) Factory settings. 
+// Settings ho Addin Template (hoAddinTemplate) Factory settings. 
 // History
 // - 23.  March 2018
 //
 // File-Path: you can use "\\" or "/"
 {
 
-    "RootSwadm" :                       "d:/hoData/Projects/00Current/ZF/IfManagerTest/", 
-    "RootComponent":                   "d:/hoData/Projects/00Current/ZF/IfManagerTest/"
+    "RootSwadm" :                       "d:/hoData/Projects/00Current/ZF/hoAddinTemplateTest/", 
+    "RootComponent":                   "d:/hoData/Projects/00Current/ZF/hoAddinTemplateTest/"
    
 
 

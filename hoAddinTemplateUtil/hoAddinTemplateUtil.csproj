@@ -7,8 +7,8 @@
     <ProjectGuid>{D9C039ED-1B7A-4822-8019-6CFD3F154348}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IfManUtil</RootNamespace>
-    <AssemblyName>IfManUtil</AssemblyName>
+    <RootNamespace>hoAddinTemplateUtil</RootNamespace>
+    <AssemblyName>hoAddinTemplateUtil</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
