@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hoAddinTemplateRoot", "hoAddinTemplateRoot\hoAddinTemplateRoot.csproj", "{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348} = {D9C039ED-1B7A-4822-8019-6CFD3F154348}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hoAddinTemplateGui", "hoAddinTemplateGui\hoAddinTemplateGui.csproj", "{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hoAddinTemplateUtil", "hoAddinTemplateUtil\hoAddinTemplateUtil.csproj", "{D9C039ED-1B7A-4822-8019-6CFD3F154348}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "hoAddinTemplateSetup", "hoAddinTemplateSetup\hoAddinTemplateSetup.wixproj", "{617A0A6E-8082-4F0A-A8F7-3261C3C92EE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{B17F4DA5-112D-4CB0-8771-209891F3C913}"
+	ProjectSection(SolutionItems) = preProject
+		hoAddinTemplateSetup\bin\Release\en-us\hoAddinTemplateager.msi = hoAddinTemplateSetup\bin\Release\en-us\hoAddinTemplateager.msi
+		hoAddinTemplateSetup\Wxs\Product.wxs = hoAddinTemplateSetup\Wxs\Product.wxs
+		hoAddinTemplateSetup\readme.md = hoAddinTemplateSetup\readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Debug|x86.ActiveCfg = Debug|x86
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Debug|x86.Build.0 = Debug|x86
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Release|x86.ActiveCfg = Release|x86
+		{ED6C8BCD-AD13-4EB7-9B70-97DB82B62024}.Release|x86.Build.0 = Release|x86
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Debug|x86.Build.0 = Debug|Any CPU
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Release|x86.ActiveCfg = Release|x86
+		{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}.Release|x86.Build.0 = Release|x86
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Debug|x86.Build.0 = Debug|Any CPU
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Release|x86.ActiveCfg = Release|x86
+		{D9C039ED-1B7A-4822-8019-6CFD3F154348}.Release|x86.Build.0 = Release|x86
+		{617A0A6E-8082-4F0A-A8F7-3261C3C92EE6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{617A0A6E-8082-4F0A-A8F7-3261C3C92EE6}.Debug|x86.ActiveCfg = Debug|x86
+		{617A0A6E-8082-4F0A-A8F7-3261C3C92EE6}.Debug|x86.Build.0 = Debug|x86
+		{617A0A6E-8082-4F0A-A8F7-3261C3C92EE6}.Release|Any CPU.ActiveCfg = Release|x86
+		{617A0A6E-8082-4F0A-A8F7-3261C3C92EE6}.Release|x86.ActiveCfg = Release|x86
+		{617A0A6E-8082-4F0A-A8F7-3261C3C92EE6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FC02E90-F4E6-44A3-91D6-A8F3A8E68F68}
+	EndGlobalSection
+EndGlobal
