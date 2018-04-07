@@ -13,7 +13,9 @@ Template for EA Addins with GUI written in C#. The features are:
 	 -  GUI to install
    - Build *.msi with product number
 
-See: [Install Add-In without Admin privileges](https://github.com/Helmut-Ortmann/EnterpriseArchitect_hoTools/wiki/AddInWithoutAdmin)
+![](wiki/images/hoAddinTemplateMenuFile.png)
+
+See also: [Install Add-In without Admin privileges](https://github.com/Helmut-Ortmann/EnterpriseArchitect_hoTools/wiki/AddInWithoutAdmin)
 
 My environemt:
 
