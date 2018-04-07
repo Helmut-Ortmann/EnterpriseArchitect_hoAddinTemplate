@@ -7,10 +7,10 @@
       -->
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="LocalAppData"> <!--Prevent using UAC (User Access Control)-->
-                <Directory Id="APPLICATIONFOLDER" Name="IfManager"  >
+                <Directory Id="APPLICATIONFOLDER" Name="hoAddinTemplate"  >
                 </Directory>
             </Directory>
         </Directory>
-        <Property Id="ApplicationFolderName" Value="IfManager" />
+        <Property Id="ApplicationFolderName" Value="hoAddinTemplate" />
     </Fragment>
 </Wix>

@@ -11,6 +11,7 @@ Template for EA Addins with GUI written in C#. The features are:
      -  per user install
 	 -  per machine install
 	 -  GUI to install
+   - Build *.msi with product number
 
 
 My environemt:
