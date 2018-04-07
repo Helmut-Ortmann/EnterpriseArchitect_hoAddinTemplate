@@ -1,14 +1,14 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace hoAddinTemplate
+namespace hoAddinTemplateGui
 {
     /// <summary>
-    /// Interface for EA COM 
+    /// Interface for EA COM Gui. 
     /// </summary>
     [ComVisible(true)]
     [InterfaceType(ComInterfaceType.InterfaceIsDual)]
-    [Guid("A3F57B13-30B0-4B01-A49C-DE9789E37A95")]
-    interface IhoAddinTemplate
+    [Guid("BE999EE3-CDFF-4A6C-B8DB-C419F457EBF0")]
+    interface IhoAddinTemplateGui
     {
         string GetName();
     }

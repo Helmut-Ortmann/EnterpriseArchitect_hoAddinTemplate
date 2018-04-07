@@ -7,8 +7,8 @@
     <ProjectGuid>{B8DAAA03-1186-4CDB-887C-1CF2D5481ABD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>hoAddinTemplate</RootNamespace>
-    <AssemblyName>hoAddinTemplate</AssemblyName>
+    <RootNamespace>hoAddinTemplateGui</RootNamespace>
+    <AssemblyName>hoAddinTemplateGui</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

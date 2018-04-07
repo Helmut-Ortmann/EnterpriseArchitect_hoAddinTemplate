@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EaAddinFramework\EaAddinBase.cs" />
-    <Compile Include="hoAddinTemplateRoot.cs" />
+    <Compile Include="Root.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

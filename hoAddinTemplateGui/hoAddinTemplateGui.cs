@@ -1,19 +1,18 @@
-﻿using System.IO;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using hoAddinTemplate.Settings;
+using hoAddinTemplateGui.Settings;
 using hoAddinTemplateUtil.General;
 
-namespace hoAddinTemplate
+namespace hoAddinTemplateGui
 {
     [ComVisible(true)]
     [ClassInterface(ClassInterfaceType.None)]
-    [Guid("00826A14-89DE-4702-B998-E0F144DFA8C5")]
+    [Guid("358015AA-734E-4E27-B518-D6C71903EC4E")]
     [ProgId(ProgId)]
-    [ComDefaultInterface(typeof(IhoAddinTemplate))]
-    public partial class hoAddinTemplate : UserControl, IhoAddinTemplate
+    [ComDefaultInterface(typeof(IhoAddinTemplateGui))]
+    public partial class Gui : UserControl, IhoAddinTemplateGui
     {
-        public const string ProgId = "hoAddinTemplate.hoAddinTemplate";
+        public const string ProgId = "hoAddinTemplate.Gui";
         public const string TabName = "hoAddinTemplate";
 
         private EA.Repository _rep;
@@ -25,7 +24,7 @@ namespace hoAddinTemplate
             set => _settings = value;
         }
 
-        public hoAddinTemplate()
+        public Gui()
         {
             InitializeComponent();
         }

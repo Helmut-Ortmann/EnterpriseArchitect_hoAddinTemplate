@@ -1,6 +1,6 @@
-﻿namespace hoAddinTemplate
+﻿namespace hoAddinTemplateGui
 {
-    partial class hoAddinTemplate
+    partial class Gui
     {
         /// <summary> 
         /// Required designer variable.

@@ -37,7 +37,12 @@ My environemt:
        - Newtonsoft.Json (Package Manager)
        - WixUIExtension (hoAddinTemplateSetup to c:\Program Files (x86)\WiX Toolset v3.11\bin\WixUIExtension.dll, my installation)
        - Project properties: hoAddinTemplateRoot, Debug, Start external program=C:\Program Files (x86)\Sparx Systems\EA\EA.exe, my installation)
-   3.  Build and test as release and debug
+   3.  Create Entry in registry for Addin 'hoAddinTemplate'
+       -  Key: HKEY_CURRENT_USER\Software\Sparx Systems\EAAddins\hoAddinTemplate
+       -  Value: (Default)   hoAddinTemplate.Root
+   4.  Build and test as release and debug
+       - Install from: hoAddinTemplateSetup\bin\Release\en-us\hoAddinTemplate.msi
+       - Advanced, per user Install, to install without admin rights!
 
 
 ## References

@@ -38,7 +38,7 @@ Product definition to install with or without Admin rights
        see also: http://kentie.net/article/wixnameversion/index.htm
   -->
   <?define ProductVersion="1.0.1" ?> 
-  <?define UpgradeCode="A4A2F87F-BFFB-4A32-80A1-E59686460BA3" ?>
+  <?define UpgradeCode="B2083CE6-61F0-46A2-9CD6-B88EEE04EAC7" ?>
   <?define Manufacturer="ho" ?>
   <?define ProductName="hoAddinTemplate" ?>
 

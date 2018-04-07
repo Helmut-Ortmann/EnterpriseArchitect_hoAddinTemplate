@@ -20,7 +20,7 @@ rem            Change name accordingly
 SET WIX=C:\Program Files (x86)\WiX Toolset v3.11\bin\heat
 del *.wxs
 
-"%WIX%" file ..\..\hoAddinTemplateRoot\bin\x86\release\hoAddinTemplateRoot.dll -ag -template fragment -out hoAddinTemplateRoot.wxs
-"%WIX%" file ..\..\hoAddinTemplate\bin\x86\release\hoAddinTemplate.dll  -ag -template fragment -out hoAddinTemplate.wxs
+"%WIX%" file ..\..\hoAddinTemplateRoot\bin\release\hoAddinTemplateRoot.dll -ag -template fragment -out hoAddinTemplateRoot.wxs
+"%WIX%" file ..\..\hoAddinTemplateGui\bin\release\hoAddinTemplateGui.dll  -ag -template fragment -out hoAddinTemplateGui.wxs
 
 dir

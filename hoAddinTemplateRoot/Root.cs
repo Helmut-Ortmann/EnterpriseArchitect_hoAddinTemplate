@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using hoAddinTemplate.Settings;
+using hoAddinTemplateGui.Settings;
 
 namespace hoAddinTemplateRoot
 {
@@ -12,15 +12,15 @@ namespace hoAddinTemplateRoot
     // You may check registration with: https://community.sparxsystems.com/community-resources/772-ea-installation-inspector
     [ComVisible(true)]
     [ClassInterface(ClassInterfaceType.None)]
-    [Guid("9DB59F66-C4CD-4188-9388-2053C29AA0D7")]
+    [Guid("7FFFBAAB-EC10-4937-AA0D-E355DC97089B")]
     // ProgID is the same as the string to register for EA in 'Sparx Systems:EAAddins:AddInSimple:Default'
     // In description: 'Namespace.ClassName'
     // EA uses always the ProId.
-    [ProgId("hoAddinTemplateRoot.hoAddinTemplateRoot")]
-    public class hoAddinTemplateRoot :EaAddinFramework.EaAddinBase
+    [ProgId("hoAddinTemplate.Root")]
+    public class Root :EaAddinFramework.EaAddinBase
     {
         private EA.Repository _rep;
-        private hoAddinTemplate.hoAddinTemplate _gui;
+        private hoAddinTemplateGui.Gui _gui;
 
 
         // settings
@@ -34,7 +34,7 @@ namespace hoAddinTemplateRoot
 
 
 
-        public hoAddinTemplateRoot()
+        public Root()
         {
             try
             {
@@ -120,10 +120,10 @@ namespace hoAddinTemplateRoot
             {
                 try
                 {
-                    _gui = _rep.AddWindow(hoAddinTemplate.hoAddinTemplate.TabName, hoAddinTemplate.hoAddinTemplate.ProgId);
+                    _gui = _rep.AddWindow(hoAddinTemplateGui.Gui.TabName, hoAddinTemplateGui.Gui.ProgId);
                     if (_gui == null)
                     {
-                        MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'",
+                        MessageBox.Show($"TabName:'{hoAddinTemplateGui.Gui.TabName}'\r\nProgId:'{hoAddinTemplateGui.Gui.ProgId}'",
                             "Can't install Add-In 'hoAddinTemplate' as Tab");
                         
                     }
@@ -131,7 +131,7 @@ namespace hoAddinTemplateRoot
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'\r\n\r\n{e}", 
+                    MessageBox.Show($"TabName:'{hoAddinTemplateGui.Gui.TabName}'\r\nProgId:'{hoAddinTemplateGui.Gui.ProgId}'\r\n\r\n{e}", 
                         "Can't install Add-In 'hoAddinTemplate'");
                     throw;
                 }
@@ -142,16 +142,16 @@ namespace hoAddinTemplateRoot
         {
             try
             {
-               _gui =  _rep.AddTab(hoAddinTemplate.hoAddinTemplate.TabName, hoAddinTemplate.hoAddinTemplate.ProgId);
+               _gui =  _rep.AddTab(hoAddinTemplateGui.Gui.TabName, hoAddinTemplateGui.Gui.ProgId);
                 if (_gui == null)
                 {
-                    MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'", "Can't install Add-In 'hoAddinTemplate' as Window");
+                    MessageBox.Show($"TabName:'{hoAddinTemplateGui.Gui.TabName}'\r\nProgId:'{hoAddinTemplateGui.Gui.ProgId}'", "Can't install Add-In 'hoAddinTemplate' as Window");
                 }
                 ;
             }
             catch (Exception e)
             {
-                MessageBox.Show($"TabName:'{hoAddinTemplate.hoAddinTemplate.TabName}'\r\nProgId:'{hoAddinTemplate.hoAddinTemplate.ProgId}'\r\n\r\n{e}", "Can't show Add-In 'hoAddinTemplate' in EA.");
+                MessageBox.Show($"TabName:'{hoAddinTemplateGui.Gui.TabName}'\r\nProgId:'{hoAddinTemplateGui.Gui.ProgId}'\r\n\r\n{e}", "Can't show Add-In 'hoAddinTemplate' in EA.");
                 throw;
             }
         }

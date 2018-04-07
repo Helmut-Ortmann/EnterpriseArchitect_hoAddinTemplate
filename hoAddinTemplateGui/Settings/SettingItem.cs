@@ -3,7 +3,7 @@
 
 using Newtonsoft.Json;
 
-namespace hoAddinTemplate.Settings
+namespace hoAddinTemplateGui.Settings
 {
     public class SettingItem
     {
