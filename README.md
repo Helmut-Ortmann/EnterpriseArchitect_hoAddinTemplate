@@ -13,6 +13,7 @@ Template for EA Addins with GUI written in C#. The features are:
 	 -  GUI to install
    - Build *.msi with product number
 
+See: [Install Add-In without Admin privileges](https://github.com/Helmut-Ortmann/EnterpriseArchitect_hoTools/wiki/AddInWithoutAdmin)
 
 My environemt:
 
@@ -37,3 +38,8 @@ My environemt:
        - WixUIExtension (hoAddinTemplateSetup to c:\Program Files (x86)\WiX Toolset v3.11\bin\WixUIExtension.dll, my installation)
        - Project properties: hoAddinTemplateRoot, Debug, Start external program=C:\Program Files (x86)\Sparx Systems\EA\EA.exe, my installation)
    3.  Build and test as release and debug
+
+
+## References
+
+- [Install Add-In without Admin privileges](https://github.com/Helmut-Ortmann/EnterpriseArchitect_hoTools/wiki/AddInWithoutAdmin)
